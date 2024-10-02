@@ -1,5 +1,15 @@
 ## Simple Measure Application
 This is a simple project that enhance ARKit & RealityKit in Swift to make a mvp version of ios measure application. This project could be beneficial for people who just started ar programming and want to duplicate measure app from ios native application. 
+##
+ 
+
+#### Dependency Package: (Focus Entity URL) <a href="https://medium.com/@d4sontiovino/implementing-focus-entity-in-swift-ar-a-simple-approach-0857d7dc7a10"><sub><sup> Article on how to implement focus entity </sup></sub></a>
+
+
+```
+https://github.com/maxxfrazer/FocusEntity
+```
+##
 
 ### Functionalities
 - <b>Place Point</b>
