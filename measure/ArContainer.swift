@@ -16,7 +16,6 @@ class ViewController: UIViewController,ARSessionDelegate{
     var distanceBetweenTwoPoints = 0;
     var lockDistanceThreshold:Float = 0.4;
 
-    
     private var focusEntity: FocusEntity!
     private var arView: ARView!
     
@@ -38,6 +37,8 @@ class ViewController: UIViewController,ARSessionDelegate{
         
     }
     
+    /// Place Model and check if there is any object nearby to lock the position
+    /// on that object position to make the mesh
     func placeModel(in arView: ARView, focusEntity: FocusEntity?) {
         guard let focusEntity = focusEntity else { return }
         var isLockedEntity:ModelEntity?
@@ -85,20 +86,20 @@ class ViewController: UIViewController,ARSessionDelegate{
         
     }
     
-    //MARK: ERROR
+    /// Check For Duplicates
     func hasDuplicatePoints(in points: [SIMD3<Float>]) -> Bool {
-        print(points)
         for i in 0..<points.count {
             print(points[i])
             for j in (i + 1)..<points.count {
                 if points[i] == points[j] {
-                    return true // Found a duplicate
+                    return true
                 }
             }
         }
         return false
     }
     
+    /// Draw Line using start & end position
     func drawLine(from start: SIMD3<Float>, to end: SIMD3<Float>, distance: Float) {
         let vector = end - start
         let length = simd_length(vector)
@@ -126,6 +127,10 @@ class ViewController: UIViewController,ARSessionDelegate{
         arView.scene.addAnchor(anchor)
     }
     
+    
+
+    // MARK: Not Consistent
+    /// Draw Mesh from all of the object position
     func drawMesh(from points: [SIMD3<Float>]) -> ModelEntity {
         var indices: [UInt32] = []
         for i in 1..<(points.count - 2) {
