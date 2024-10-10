@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EFEDC7EC2CAD4888002F8C34 /* measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = measure.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFEDC7EC2CAD4888002F8C34 /* solstice measure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "solstice measure.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEDC7FC2CAD4889002F8C34 /* measureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = measureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEDC8062CAD4889002F8C34 /* measureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = measureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -103,7 +103,7 @@
 		EFEDC7ED2CAD4888002F8C34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EFEDC7EC2CAD4888002F8C34 /* measure.app */,
+				EFEDC7EC2CAD4888002F8C34 /* solstice measure.app */,
 				EFEDC7FC2CAD4889002F8C34 /* measureTests.xctest */,
 				EFEDC8062CAD4889002F8C34 /* measureUITests.xctest */,
 			);
@@ -133,7 +133,7 @@
 				EFADD62C2CAD526600B70012 /* FocusEntity */,
 			);
 			productName = measure;
-			productReference = EFEDC7EC2CAD4888002F8C34 /* measure.app */;
+			productReference = EFEDC7EC2CAD4888002F8C34 /* solstice measure.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EFEDC7FB2CAD4889002F8C34 /* measureTests */ = {
@@ -436,7 +436,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dasontio.measure;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "solstice measure";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,7 +469,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dasontio.measure;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "solstice measure";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
